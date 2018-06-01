@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20px"
+    android:layout_height="wrap_content"
+    tools:context="com.example.sreeraj.todolist.Main2Activity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Enter the contents"
+        android:textSize="50px"
+        android:textColor="#c40e69"
+        android:padding="20px"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:padding="15px"
+        android:layout_margin="20px"
+        android:text="Heading"
+        />
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:background="@layout/rounded_border_edittext"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:padding="15px"
+        android:text="Context"
+        android:layout_margin="20px"
+        />
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:background="@layout/round_large"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40px">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="save"
+            android:background="@layout/rounded_border_edittext"
+            android:textColor="#000"
+            android:layout_marginTop="30px"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Reset"
+            android:layout_marginTop="30px"
+            android:background="@layout/rounded_border_edittext"
+            android:textColor="#000"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
