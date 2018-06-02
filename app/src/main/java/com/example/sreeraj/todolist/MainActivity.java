@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this , Main2Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -141,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("Exit", new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface arg0, int arg1) {
-                        MainActivity.super.onBackPressed();
+                        finish();
                     }
                 }).create().show();
     }

@@ -31,6 +31,7 @@ public class Main2Activity extends AppCompatActivity {
     String heading_list_string="";
     String context_list_string ="";
     String content_objects;
+    String text = "";
 
 
     @Override
@@ -66,8 +67,11 @@ public class Main2Activity extends AppCompatActivity {
                 List<Content> contentList = new ArrayList<Content>();
                 if(! (heading.matches("") && context.matches(""))){
                 Content obj= new Content(heading,context);
-                contentList.add(obj);}
-
+                contentList.add(obj);
+                text = "Saved";}
+                else{
+                    text = "empty entry";
+                }
 
 
 
@@ -78,7 +82,6 @@ public class Main2Activity extends AppCompatActivity {
                      contentList.add(content);
                  }}
 
-                Toast.makeText(Main2Activity.this , "entered" ,Toast.LENGTH_SHORT).show();
                 content_objects = gson.toJson(contentList);
                 editor.putString("content_objects",content_objects);
                 editor.commit();
@@ -86,8 +89,9 @@ public class Main2Activity extends AppCompatActivity {
 
                 Intent intent = new Intent(Main2Activity.this , MainActivity.class);
 
-                Toast.makeText(Main2Activity.this , "Saved" , Toast.LENGTH_SHORT).show();
+                Toast.makeText(Main2Activity.this , text , Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
 
 
 

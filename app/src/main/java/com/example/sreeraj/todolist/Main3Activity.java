@@ -85,6 +85,7 @@ public class Main3Activity extends AppCompatActivity {
                     Toast.makeText(Main3Activity.this, "Saved", Toast.LENGTH_SHORT).show();}
 
                 startActivity(intent);
+                finish();
 
 
             }
@@ -120,6 +121,7 @@ public class Main3Activity extends AppCompatActivity {
                 Intent intent = new Intent(Main3Activity.this, MainActivity.class);
                 Toast.makeText(Main3Activity.this, "Deleted", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
 
 
             }

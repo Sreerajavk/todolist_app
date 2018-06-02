@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="save"
-            android:background="@layout/rounded_border_edittext"
+            android:background="@drawable/button"
             android:textColor="#000"
             android:layout_marginTop="30px"
             android:layout_marginRight="15dp"
@@ -77,7 +77,7 @@
             android:layout_height="match_parent"
             android:text="Reset"
             android:layout_marginTop="30px"
-            android:background="@layout/rounded_border_edittext"
+            android:background="@drawable/button"
             android:textColor="#000"
             android:layout_weight="1"
 

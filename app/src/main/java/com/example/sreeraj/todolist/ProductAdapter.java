@@ -1,5 +1,6 @@
 package com.example.sreeraj.todolist;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -75,6 +76,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                 intent.putExtra("context" , content.getContext());
                 intent.putExtra("position",position );
                 mCtx.startActivity(intent);
+                ((Activity)mCtx).finish();
 
             }
         });

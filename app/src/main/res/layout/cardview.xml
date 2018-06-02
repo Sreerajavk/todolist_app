@@ -11,7 +11,6 @@
     android:orientation="horizontal"
     android:padding="0px"
     android:layout_marginTop="50dp"
-
     android:layout_margin="20px"
     card_view:cardElevation="8dp"
     card_view:cardCornerRadius="30px">
@@ -33,7 +32,7 @@
                         android:textAlignment="center"
                         android:fontFamily="sans-serif"
                         android:textColor="#f00"
-                        android:padding = "20px"
+                        android:padding = "10px"
                         android:textSize="30dip"
 
                         />
