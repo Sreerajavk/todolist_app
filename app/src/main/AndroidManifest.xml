@@ -25,6 +25,7 @@
             android:name=".Main2Activity"
             android:noHistory="true"></activity>
         <activity
+            android:theme="@style/AppTheme"
             android:name=".MainActivity"
             android:noHistory="true"></activity>
         <activity

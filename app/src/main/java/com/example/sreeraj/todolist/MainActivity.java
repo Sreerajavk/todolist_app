@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this , Main2Activity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
@@ -135,6 +135,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
+        /*
         new AlertDialog.Builder(this)
 
                 .setMessage("Are you sure you want to exit?")
@@ -144,6 +146,21 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface arg0, int arg1) {
                         finish();
                     }
-                }).create().show();
+                })
+
+                .create().show();  */
+
+        AlertDialog.Builder  builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure want to exit");
+        builder.setNegativeButton(android.R.string.no, null);
+        builder.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+
+            public void onClick(DialogInterface arg0, int arg1) {
+                MainActivity.super.onBackPressed();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogTheme;
+        dialog.show();
     }
 }

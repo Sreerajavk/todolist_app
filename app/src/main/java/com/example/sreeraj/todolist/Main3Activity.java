@@ -129,6 +129,11 @@ public class Main3Activity extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed(){
+        Intent intent = new Intent(Main3Activity.this , MainActivity.class);
+        startActivity(intent);
+    }
 
 
 }

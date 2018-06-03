@@ -76,7 +76,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                 intent.putExtra("context" , content.getContext());
                 intent.putExtra("position",position );
                 mCtx.startActivity(intent);
-                ((Activity)mCtx).finish();
 
             }
         });

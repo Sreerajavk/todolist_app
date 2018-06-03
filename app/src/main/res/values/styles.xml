@@ -8,11 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@anim/right</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@anim/left</item>
+        <item name="android:windowExitAnimation">@anim/right</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -20,10 +23,15 @@
 
     </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" ></style>
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/left</item>
+        <item name="android:windowExitAnimation">@anim/right</item>
+    </style>
 
-
-
+    <style name="Dialog_fade">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
     </style>
 
 </resources>
